@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../estilo/addpost.css">
+        <link rel="stylesheet" href="../estilo/reset.css">
+        <script src="../javascript/addpost.js" defer></script>
+        <title>Adicionar Post</title>
+    </head>
+    <body>
+        <main>
+            <div id="block" class="block">
+                <div id="content" class="content">
+                    <header>
+                        <div id="title" class="title">
+                            <h1>Adicionar Post</h1>
+                        </div>
+                    </header>
+                    <form id="form" class="form">
+                        <input type="text" id="texttitle" class="texttitle" placeholder ="Digite aqui seu título" required>
+                        <input type="text" id="name" class="name" placeholder ="Digite aqui seu nome" required>
+                        <!-- textarea serve para descrição -->
+                        <textarea rows="12"  id="textarea" class="textarea" placeholder="digite seu texto" required></textarea>
+                    <!-- <input type="text" id="text" class="text" placeholder ="Digite aqui seu texto" required> -->
+                        <input type="text" id="url" class="url" placeholder ="cole aqui sua url da imagem" required>
+                    </form>
+                        <div id="divbutton" class="divbutton">
+                            <button id="button" class="button">ADICIONAR POST</button>
+                        </div>
+                </div>
+            </div>
+
+        </main>
+    </body>
+</html>

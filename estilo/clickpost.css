@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+body {
+    background-color: #F3F3F3;
+}
+.block {
+    display:grid;
+    grid: auto / 100%;
+}
+.title {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    font-size:48px; 
+    padding-bottom:60px;
+    height:80px;
+}
+.title h1 {
+    font-size:48px;
+    font-weight:700
+}
+.titlepost {
+    width:100%;
+    margin-bottom:20px;
+    display:flex;
+    justify-content: center;
+}
+.titlepost h2 {
+    font-size:28px;
+}
+.nameanddate {
+    font-size:14px;
+}
+.buttons {
+    display:flex;
+    width:1380.18px;
+    justify-content: flex-end;
+}
+.newbutton {
+    background-color:#32C140;
+}
+.editbutton {
+    background-color: #758FEB;
+}
+.deletebutton {
+    background-color: #E51616;
+}
+.newbutton, .editbutton, .deletebutton {
+    margin-right:5px;
+    border:none;
+    height:42px;
+    width:84px;
+    color:white;
+    cursor:pointer;
+}
+.post {
+    display:flex;
+    justify-content: center;
+    display: grid;
+    grid: 50% 50% / auto;
+}
+.image {
+    width:100%;
+    padding-top:20px;    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img {
+    width:1400px;
+    height:770px;
+    
+}
+.contenttwo {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:-150px;
+    z-index:1;
+}
+.information {
+    background-color: white;
+    width:70%;
+    padding:50px;
+    font-size:20px;
+    
+}
+.modal {
+    width:700px;
+    height:270px;
+    background-color: #F8F8F8;
+    display:flex;
+    justify-content: center;
+    align-items:flex-end;
+    display: none;
+    margin-top:-700px;
+    z-index: 99;
+    
+}
+.openmodal {
+    display:flex;
+}
+.content {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+}
+.contentmodal {
+    
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    width:100%;
+    background-color: #F8F8F8;
+    margin-bottom:40px;
+}
+.buttonsmodal {
+    width:100%; 
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+
+}
+p {
+    font-size:20px; 
+    text-align:center;
+    line-height:30px;
+
+}
+.modalno {
+    margin-right:20px;
+    background-color: #758FEB;
+    font-weight: bolder;
+}
+.modaldelete {
+    background-color: red;
+    font-weight: bolder;
+    
+}
+.modalno, .modaldelete {
+    border:none;
+    width:20%;
+    color:white;
+    cursor:pointer;
+    height:40px;
+    font-size:12px;
+}
+.textmodal p {
+    font-size:35px;
+    margin-bottom:50px;
+}
+@media screen and (min-width:100px) and (max-width:450px){
+    .post {
+        
+        display:grid;
+        grid: 1fr 1fr / auto;
+    }
+    .information {
+        width:80%;
+        padding:20px;
+    }
+    .contenttwo {
+        margin-top:-100px;
+        align-items: flex-start;
+    }
+    .image img {
+        width:100%;
+        height:400px;
+    }
+    .text p {
+        font-size:10px;
+    }
+    .nameanddate {
+        font-size: 5px;
+    }
+    .buttons {
+        width:100%;
+        
+    }
+    .newbutton, .editbutton, .deletebutton {
+        width:55px;
+        height:35px;
+    }
+    .titlepost h2 {
+        font-size:18px;
+    }
+    .modal {
+        width:200px;
+        height:100px;
+        margin-top: -700px;
+    }
+    .modalno, .modaldelete {
+        width:20%;
+        height:20px;
+        font-size: 7px;
+
+    }
+}
+@media screen and (min-width:451px) and (max-width:600px){
+    .post {
+        
+        display:grid;
+        grid: 1fr 1fr / auto;
+    }
+    .information {
+        width:100%;
+        padding:20px;
+    }
+    .contenttwo {
+        margin-top:-100px;
+        align-items: flex-start;
+    }
+    .image img {
+        width:100%;
+        height:400px;
+    }
+    .text p {
+        font-size:15px;
+    }
+    .nameanddate {
+        font-size: 5px;
+    }
+    .buttons {
+        width:100%;
+        
+    }
+    .newbutton, .editbutton, .deletebutton {
+        width:55px;
+        height:35px;
+    }
+    .titlepost h2 {
+        font-size:18px;
+    }
+    .modal {
+        width:200px;
+        height:100px;
+        margin-top: -700px;
+    }
+    .modalno, .modaldelete {
+        width:20%;
+        height:20px;
+        font-size: 7px;
+
+    }
+    
+}
+@media screen and (min-width:601px) and (max-width:900px){
+    .post {
+        
+        display:grid;
+        grid: 1fr 1fr / auto;
+    }
+    .information {
+        width:80%;
+        padding:50px;
+    }
+    .contenttwo {
+        margin-top:-100px;
+        align-items: flex-start;
+        
+    }
+    .image img {
+        width:100%;
+        height:700px;
+    }
+    .text p {
+        font-size:20px;
+    }
+    .nameanddate {
+        font-size: 10px;
+    }
+    .buttons {
+        width:100%;
+        
+    }
+    .newbutton, .editbutton, .deletebutton {
+        width:80px;
+        height:40px;
+    }
+    .titlepost h2 {
+        font-size:30px;
+    }
+    .modal {
+        width:300px;
+        height:150px;
+        margin-top: -1100px;
+    }
+    .modalno, .modaldelete {
+        width:30%;
+        height:30px;
+        font-size: 10px;
+
+    }
+    .textmodal p {
+        font-size:15px;
+    }
+}
+@media screen and (min-width:901px) and (max-width:1440px){
+    .post {
+        
+        display:grid;
+        grid: 1fr 1fr / auto;
+    }
+    .information {
+        width:80%;
+        padding:50px;
+    }
+    .contenttwo {
+        margin-top:-100px;
+        align-items: flex-start;
+        
+    }
+    .image img {
+        width:100%;
+        height:700px;
+    }
+    .text p {
+        font-size:20px;
+    }
+    .nameanddate {
+        font-size: 14px;
+    }
+    .buttons {
+        width:100%;
+        
+    }
+    .newbutton, .editbutton, .deletebutton {
+        height:42px;
+        width:84px;
+    }
+    .titlepost h2 {
+        font-size:30px;
+    }
+    .modal {
+        width:300px;
+        height:150px;
+        margin-top: -1100px;
+    }
+    .modalno, .modaldelete {
+        width:30%;
+        height:30px;
+        font-size: 10px;
+
+    }
+    .textmodal p {
+        font-size:15px;
+    }
+}
