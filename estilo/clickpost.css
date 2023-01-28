@@ -1,11 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-* {
-    margin:0px;
-    padding:0px;
-    box-sizing:border-box;
-    font-family: 'Open Sans', sans-serif;
-    
-}
 body {
     background-color: #F3F3F3;
 }
@@ -25,16 +17,16 @@ body {
     font-size:48px;
     font-weight:700
 }
-.titlepost {
+.title-post {
     width:100%;
     margin-bottom:20px;
     display:flex;
     justify-content: center;
 }
-.titlepost h2 {
+.title-post h2 {
     font-size:28px;
 }
-.nameanddate {
+.name-and-date {
     font-size:14px;
 }
 .buttons {
@@ -42,16 +34,16 @@ body {
     width:1380.18px;
     justify-content: flex-end;
 }
-.newbutton {
+.new-button {
     background-color:#32C140;
 }
-.editbutton {
+.edit-button {
     background-color: #758FEB;
 }
-.deletebutton {
+.delete-button {
     background-color: #E51616;
 }
-.newbutton, .editbutton, .deletebutton {
+.new-button, .edit-button, .delete-button {
     margin-right:5px;
     border:none;
     height:42px;
@@ -77,7 +69,7 @@ body {
     height:770px;
     
 }
-.contenttwo {
+.content-two {
     width:100%;
     display:flex;
     justify-content: center;
@@ -104,7 +96,7 @@ body {
     z-index: 99;
     
 }
-.openmodal {
+.open-modal {
     display:flex;
 }
 .content {
@@ -114,7 +106,7 @@ body {
     flex-direction: column;
 
 }
-.contentmodal {
+.content-modal {
     
     display:flex;
     align-items:center;
@@ -123,7 +115,7 @@ body {
     background-color: #F8F8F8;
     margin-bottom:40px;
 }
-.buttonsmodal {
+.buttons-modal {
     width:100%; 
     display: flex;
     justify-content: center;
@@ -136,17 +128,17 @@ p {
     line-height:30px;
 
 }
-.modalno {
+.modal-no {
     margin-right:20px;
     background-color: #758FEB;
     font-weight: bolder;
 }
-.modaldelete {
+.modal-delete {
     background-color: red;
     font-weight: bolder;
     
 }
-.modalno, .modaldelete {
+.modal-no, .modal-delete {
     border:none;
     width:20%;
     color:white;
@@ -154,7 +146,7 @@ p {
     height:40px;
     font-size:12px;
 }
-.textmodal p {
+.text-modal p {
     font-size:35px;
     margin-bottom:50px;
 }
@@ -168,7 +160,7 @@ p {
         width:80%;
         padding:20px;
     }
-    .contenttwo {
+    .content-two{
         margin-top:-100px;
         align-items: flex-start;
     }
@@ -179,18 +171,18 @@ p {
     .text p {
         font-size:10px;
     }
-    .nameanddate {
+    .name-and-date {
         font-size: 5px;
     }
     .buttons {
         width:100%;
         
     }
-    .newbutton, .editbutton, .deletebutton {
+    .new-button, .edit-button, .delete-button {
         width:55px;
         height:35px;
     }
-    .titlepost h2 {
+    .title-post h2 {
         font-size:18px;
     }
     .modal {
@@ -198,7 +190,7 @@ p {
         height:100px;
         margin-top: -700px;
     }
-    .modalno, .modaldelete {
+    .modal-no, .modal-delete {
         width:20%;
         height:20px;
         font-size: 7px;
@@ -215,7 +207,7 @@ p {
         width:100%;
         padding:20px;
     }
-    .contenttwo {
+    .content-two {
         margin-top:-100px;
         align-items: flex-start;
     }
@@ -226,18 +218,18 @@ p {
     .text p {
         font-size:15px;
     }
-    .nameanddate {
+    .name-and-date {
         font-size: 5px;
     }
     .buttons {
         width:100%;
         
     }
-    .newbutton, .editbutton, .deletebutton {
+    .new-button, .edit-button, .delete-button {
         width:55px;
         height:35px;
     }
-    .titlepost h2 {
+    .title-post h2 {
         font-size:18px;
     }
     .modal {
@@ -245,7 +237,7 @@ p {
         height:100px;
         margin-top: -700px;
     }
-    .modalno, .modaldelete {
+    .modal-no, .modal-delete {
         width:20%;
         height:20px;
         font-size: 7px;
@@ -263,7 +255,7 @@ p {
         width:80%;
         padding:50px;
     }
-    .contenttwo {
+    .content-two {
         margin-top:-100px;
         align-items: flex-start;
         
@@ -275,18 +267,18 @@ p {
     .text p {
         font-size:20px;
     }
-    .nameanddate {
+    .name-and-date {
         font-size: 10px;
     }
     .buttons {
         width:100%;
         
     }
-    .newbutton, .editbutton, .deletebutton {
+    .new-button, .edit-button, .delete-button {
         width:80px;
         height:40px;
     }
-    .titlepost h2 {
+    .title-post h2 {
         font-size:30px;
     }
     .modal {
@@ -294,13 +286,13 @@ p {
         height:150px;
         margin-top: -1100px;
     }
-    .modalno, .modaldelete {
+    .modal-no, .modal-delete {
         width:30%;
         height:30px;
         font-size: 10px;
 
     }
-    .textmodal p {
+    .text-modal p {
         font-size:15px;
     }
 }
@@ -314,7 +306,7 @@ p {
         width:80%;
         padding:50px;
     }
-    .contenttwo {
+    .content-two {
         margin-top:-100px;
         align-items: flex-start;
         
@@ -326,18 +318,18 @@ p {
     .text p {
         font-size:20px;
     }
-    .nameanddate {
+    .name-and-date {
         font-size: 14px;
     }
     .buttons {
         width:100%;
         
     }
-    .newbutton, .editbutton, .deletebutton {
+    .new-button, .edit-button, .delete-button {
         height:42px;
         width:84px;
     }
-    .titlepost h2 {
+    .title-post h2 {
         font-size:30px;
     }
     .modal {
@@ -345,13 +337,13 @@ p {
         height:150px;
         margin-top: -1100px;
     }
-    .modalno, .modaldelete {
+    .modal-no, .modal-delete {
         width:30%;
         height:30px;
         font-size: 10px;
 
     }
-    .textmodal p {
+    .text-modal p {
         font-size:15px;
     }
 }

@@ -1,67 +1,67 @@
-document.addEventListener("DOMContentLoaded", takeespecificinformation)
-let getLocalStorage = (key) => JSON.parse(localStorage.getItem(key))
-let setLocalStorage = (key, item) => localStorage.setItem(key, JSON.stringify(item))
-let modaldelete = document.getElementById("modaldelete");
-let modalno = document.getElementById("modalno");
-let newbutton = document.getElementById("newbutton");
-let editbutton = document.getElementById("editbutton");
-let deletebutton = document.getElementById("deletebutton");
-editbutton.addEventListener("click", () => {
-    url = "../paginas/edit.html";
-    window.open(url, "_self")
-})
-deletebutton.addEventListener("click", openmodal)
-modalno.addEventListener("click", closemodal)
-modaldelete.addEventListener("click", deletepost)
-post = document.getElementById("contentpost");
-//só colocar a função no eventListener ele não identifica o parâmetro?
-newbutton.addEventListener("click", () => {
-    url = "../paginas/addpost.html";
-         window.open(url, "_self")
-})
+    document.addEventListener("DOMContentLoaded", takeEspecificInformation)
+    const getLocalStorage = (key) => JSON.parse(localStorage.getItem(key))
+    const setLocalStorage = (key, item) => localStorage.setItem(key, JSON.stringify(item))
+    const modalDelete = document.getElementById("modal-delete");
+    const modalNo = document.getElementById("modal-no");
+    const newButton = document.getElementById("new-button");
+    const editButton = document.getElementById("edit-button");
+    const deleteButton = document.getElementById("delete-button");
+    editButton.addEventListener("click", () => {
+        const url = "../paginas/edit.html";
+        window.open(url, "_self")
+    })
+    deleteButton.addEventListener("click", openModal)
+    modalNo.addEventListener("click", closeModal)
+    modalDelete.addEventListener("click", deletePost)
+    const post = document.getElementById("content-post");
 
-function takeespecificinformation() {
-    index = getLocalStorage("index");
-    database = getLocalStorage("database")[index];
-    printpost(database)
-    
-}
-function printpost(database) {
- posttext = `<div id="post" class="post">
-        <div id="image" class="image">
-            <img src="${database.url}">
-        </div>
-        <div id ="contenttwo" class="contenttwo">
-            <div id="information" class="information">
-                <div id="nameanddate" class="nameanddate">
-                    ${database.name } | ${database.date}
-                </div>
-                    <div id="titlepost" class="titlepost">
-                        <h2>${database.title}</h2>
+    newButton.addEventListener("click", () => {
+        const url = "../paginas/addpost.html";
+            window.open(url, "_self")
+    })
+
+    function takeEspecificInformation() {
+        const index = getLocalStorage("index");
+        const dataBase = getLocalStorage("database")[index];
+        printPost(dataBase)
+        
+    }
+    function printPost(dataBase) {
+    const postText = `<div id="post" class="post">
+            <div id="image" class="image">
+                <img src="${dataBase.url}">
+            </div>
+            <div id ="content-two" class="content-two">
+                <div id="information" class="information">
+                    <div id="name-and-date" class="name-and-date">
+                        ${dataBase.name } | ${dataBase.date}
                     </div>
-                        <div id="text" class="text">
-                    <p>${database.text}</p>
+                        <div id="title-post" class="title-post">
+                            <h2>${dataBase.title}</h2>
+                        </div>
+                            <div id="text" class="text">
+                        <p>${dataBase.text}</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    ` 
-    post.innerHTML += posttext
-}
-function openmodal() {    
-    let modal = document.getElementById("modal");
-    modal.classList.add("openmodal");
-}
-function closemodal() {
-    let modal = document.getElementById("modal");
-    modal.classList.remove("openmodal")
-}
-function deletepost () {
-    database = getLocalStorage("database");
-    index = getLocalStorage("index");
-    database.splice(index, 1);
-    setLocalStorage("database", database);
-    url = "../paginas/posts.html";
-    window.open(url, "_self");
+        ` 
+        post.innerHTML += postText
+    }
+    function openModal() {    
+        const modal = document.getElementById("modal");
+        modal.classList.add("open-modal");
+    }
+    function closeModal() {
+        const modal = document.getElementById("modal");
+        modal.classList.remove("open-modal")
+    }
+    function deletePost () {
+        const dataBase = getLocalStorage("database");
+        const index = getLocalStorage("index");
+        dataBase.splice(index, 1);
+        setLocalStorage("database", dataBase);
+        const url = "../paginas/posts.html";
+        window.open(url, "_self");
 
-}
+    }

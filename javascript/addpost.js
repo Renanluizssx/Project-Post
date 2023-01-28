@@ -1,45 +1,43 @@
-//localStorage.setItem("dado", "dado")
-button = document.getElementById("button");
-button.addEventListener("click", preparesend);
-let getLocalStorage = (key) => JSON.parse(localStorage.getItem(key)) ?? []
-let setLocalStorage = (key, item) => localStorage.setItem(key, JSON.stringify(item));
-function preparesend() {
-    if (!verificarcampos()) {
-        return null
-    }
-    url = "../paginas/posts.html"
-    openwindow(url);
-};
-function verificarcampos() {
-    //tirando o return
-    form = document.getElementById("form")
- return form.reportValidity()
-};
-function openwindow(url) {
-window.open(url, "_self");
+    const button = document.getElementById("button");
+    button.addEventListener("click", prepareSend);
+    const getLocalStorage = (key) => JSON.parse(localStorage.getItem(key)) ?? []
+    const setLocalStorage = (key, item) => localStorage.setItem(key, JSON.stringify(item));
+    function prepareSend() {
+        if (!checkFields()) {
+            return null
+        }
+        const url = "../paginas/posts.html"
+        openWindow(url);
+    };
+    function checkFields() {
 
-    addpost();
-}
-function addpost () {
-    let title = document.getElementById("texttitle");
-    let name = document.getElementById("name");
-    let text = document.getElementById("textarea");
-    let url = document.getElementById("url");
-    let date = new Date();
-    let meses = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
-    datea = `${date.getDate()} ${meses[date.getMonth()]} ${date.getFullYear()}`;
+        const form = document.getElementById("form")
+        return form.reportValidity()
+    };
+    function openWindow(url) {
+    window.open(url, "_self");
 
-    let database = {
-        title:title.value,
-        name:name.value,
-        text:text.value,
-        url:url.value,
-        date:datea
+        addPost();
     }
-    createpost(database)
-}
-function createpost(database) {
-        dados = getLocalStorage("database")
-        //spread é tudo que for colocado depois da vírgula será colocado dentro do array
-        setLocalStorage ("database", [...dados, database])
-}
+    function addPost () {
+        const title = document.getElementById("text-title");
+        const name = document.getElementById("name");
+        const text = document.getElementById("text");
+        const url = document.getElementById("url");
+        const date = new Date();
+        const meses = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
+        const dateA = `${date.getDate()} ${meses[date.getMonth()]} ${date.getFullYear()}`;
+
+        const dataBase = {
+            title:title.value,
+            name:name.value,
+            text:text.value,
+            url:url.value,
+            date:dateA
+        }
+        createPost(dataBase)
+    }
+    function createPost(dataBase) {
+            const dados = getLocalStorage("database")
+            setLocalStorage ("database", [...dados, dataBase])
+    }

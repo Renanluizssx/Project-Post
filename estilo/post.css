@@ -1,10 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-* {
-    margin:0px;
-    padding:0px;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
 body {
     background-color: #E9E9E9;
 }
@@ -55,7 +48,7 @@ p {
     width:550px;
 }
 
-.imagebutton {
+.image-button {
     cursor:pointer; 
     margin-left:200px;
 }
@@ -69,7 +62,7 @@ p {
         height:313px;  
         cursor:pointer; 
 }
-.titlepost {
+.title-post {
     display:flex;
     justify-content:center;
     margin-top:10px;
@@ -97,7 +90,7 @@ p {
         padding:10px;
         text-align: center;
     }
-    .imagebutton {
+    .image-button {
         margin-left:130px;
     }
 }
@@ -113,7 +106,7 @@ p {
         padding:10px;
         text-align: center;
     }
-    .imagebutton {
+    .image-button {
         margin-left:170px;
     }
 }

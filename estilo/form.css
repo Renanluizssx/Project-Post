@@ -1,30 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-* {
-    margin:0px;
-    padding:0px;
-    box-sizing:border-box;
-    font-size:16px;
-    font-family: 'Open Sans', sans-serif;
-}
 body {
+    width:100%;
+    height:100%;
     background-color: #E9E9E9;
 }
 .title {
     margin-bottom:25px;
     font-size:25px;
-    font-weight: bolder;
 }
 .title h1 {
     font-size:32px;
     margin-bottom:20px;
+    font-weight:700;
 }
 .block {
     display:flex;
     flex-direction: column;
-    padding-top:100px;
     align-items: center;
     height:100vh;
     width:100%;
+    padding-top:10%;
 }
 .content {
     width:50%;
@@ -34,24 +28,20 @@ body {
     flex-direction: column;
     width:100%;
 }
-.text, .texttitle, .url, .name {
-    margin-bottom:10px;
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-left:10px;  
-    border:1px solid #E9E9E9;
+.text, .text-title, .url, .name {
+    padding:10px;  
     border-color: #E9E9E9;
+    border:1px solid #E9E9E9;
+    color:black;
+    margin-top:15px;
     
 }
 .text {
     padding-bottom:150px;
     
 }
-h1 {
-    font-size:32px;
-    margin-bottom:20px;
-}
-.divbutton {
+
+.div-button {
     width:100%;
     display:flex;
     justify-content: center;
@@ -65,8 +55,24 @@ h1 {
     height:45px;
     color:white;
     cursor:pointer;
+    margin-top:20px;
+
 
 }
-textarea {
-    resize: none;
+textarea{
+    padding:10px;
+    resize:none;
+    border:1px solid #E9E9E9;
+    margin-top:15px;
+}
+@media screen and (min-width:320px) and (max-width:399px){
+    .title h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:450px) and (min-width: 400px){
+    .title h1 {
+        font-size: 25px;
+    }
 }
