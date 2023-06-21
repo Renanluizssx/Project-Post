@@ -32,14 +32,14 @@
         const image = document.getElementById(`image-${index}`)
         image.addEventListener("click", () => {
 
-        const url = "paginas/clickpost.html"
+        const url = "../paginas/clickpost.html"
         window.open(url, "_self") 
         setLocalStorage("index", index)
         
         })
     }
     function openWindow() {
-        const url = "paginas/addpost.html"
+        const url = "../paginas/addpost.html"
             window.open(url, "_self")
     }
     function updateScreen (dataBase) {

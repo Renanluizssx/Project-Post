@@ -7,7 +7,7 @@
     const editButton = document.getElementById("edit-button");
     const deleteButton = document.getElementById("delete-button");
     editButton.addEventListener("click", () => {
-        const url = "paginas/edit.html";
+        const url = "../paginas/edit.html";
         window.open(url, "_self")
     })
     deleteButton.addEventListener("click", openModal)
@@ -16,7 +16,7 @@
     const post = document.getElementById("content-post");
 
     newButton.addEventListener("click", () => {
-        const url = "paginas/addpost.html";
+        const url = "../paginas/addpost.html";
             window.open(url, "_self")
     })
 
@@ -61,7 +61,7 @@
         const index = getLocalStorage("index");
         dataBase.splice(index, 1);
         setLocalStorage("database", dataBase);
-        const url = "paginas/posts.html";
+        const url = "../paginas/posts.html";
         window.open(url, "_self");
 
     }
