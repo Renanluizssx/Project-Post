@@ -6,7 +6,7 @@
         if (!checkFields()) {
             return null
         }
-        const url = "paginas/posts.html"
+        const url = "../paginas/posts.html"
         openWindow(url);
     };
     function checkFields() {
