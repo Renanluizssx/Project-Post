@@ -42,6 +42,6 @@
         index = getLocalStorage("index");
         dataBase[index] = newDataBase;
         setLocalStorage("database", dataBase)
-        const urlwindow = "../paginas/posts.html";
+        const urlwindow = "paginas/posts.html";
         window.open(urlwindow, "_self");
     }
