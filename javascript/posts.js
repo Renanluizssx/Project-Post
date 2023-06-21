@@ -44,7 +44,7 @@
     }
     function updateScreen (dataBase) {
         if (dataBase.length === 0) {
-            const url = "index.html"
+            const url = "../index.html"
             return window.open(url, "_self")
         }
         dataBase.forEach(printPost)
