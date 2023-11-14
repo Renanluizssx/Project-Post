@@ -1,68 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mais Informações POST</title>
-        <link rel="stylesheet" href="../estilo/reset.css">
-        <link rel="stylesheet" href="../estilo/clickpost.css">
-        <link rel="stylesheet" href="../font.css">
-        <link rel="stylesheet" href="../estilo/resettwo.css">
-        <script  src="../javascript/clickpost.js" defer></script>
-    </head>
-    <body>
-            <main>
-                <div id="block" class="block">
-                        <header>
-                            <div id="title" class="title">
-                                <h1>Blog</h1>
-                            </div>  
-                        </header>
-                    <div id="content" class="content">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mais Informações POST</title>
+    <link rel="stylesheet" href="../estilo/reset.css" />
+    <link rel="stylesheet" href="../estilo/clickpost.css" />
+    <link rel="stylesheet" href="../font.css" />
+    <link rel="stylesheet" href="../estilo/resettwo.css" />
+    <script src="../javascript/clickpost.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div id="block" class="block">
+        <header>
+          <div id="title" class="title">
+            <h1>Blog</h1>
+          </div>
+        </header>
+        <div id="content" class="content">
+          <div id="buttons" class="buttons">
+            <button id="new-button" class="new-button">Novo</button>
+            <button id="edit-button" class="edit-button">Editar</button>
+            <button id="delete-button" class="delete-button">Deletar</button>
+          </div>
 
-                            <div id="buttons" class="buttons">
-                                
-                                <button id="new-button" class="new-button">
-                                    Novo 
-                                </button>
-                                <button id="edit-button" class="edit-button">
-                                Editar
-                                </button>
-                                <button id="delete-button" class="delete-button">
-                                    Deletar
-                                </button>
-                                
+          <div id="content-post" class="content-post"></div>
 
-                                
-                            </div>
-
-
-                            <div id="content-post" class="content-post">
-                                
-
-                                
-                            </div>
-
-
-                            <div id="modal" class="modal">
-                            
-                                <div id="content-modal" class="content-modal">
-                                        <div id="text-modal" class="text-modal">
-                                            <p>Deseja mesmo deletar<br> esse post?</p>
-                                        </div>
-                                        <div id="buttons-modal" class="buttons-modal">
-                                            
-                                                <button id="modal-no" class="modal-no">NÃO</button>
-                                                <button id="modal-delete" class="modal-delete">DELETAR</button>
-
-                                        </div>
-                                </div>
-                            </div>
-
-                    </div>
-                </div>
-
-            </main>
-    </body>
+          <div id="modal" class="modal">
+            <div id="content-modal" class="content-modal">
+              <div id="text-modal" class="text-modal">
+                <p>
+                  Deseja mesmo deletar<br />
+                  esse post?
+                </p>
+              </div>
+              <div id="buttons-modal" class="buttons-modal">
+                <button id="modal-no" class="modal-no">NÃO</button>
+                <button id="modal-delete" class="modal-delete">DELETAR</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

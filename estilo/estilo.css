@@ -1,89 +1,84 @@
 body {
-    width:100%;
-    height:100vh;
-    overflow: hidden;
-    background-color: #F8F8F8;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f8f8f8;
 }
 main {
-    width:100%;
-    height:100vh;
+  width: 100%;
+  height: 100vh;
 }
+
 .title {
-    margin-top:25px;
-    display:flex;
-    justify-content: center;
-    height:60px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  height: 60px;
 }
 .title h1 {
-    font-size:48px;
-    font-weight: 700;
+  font-size: 48px;
+  font-weight: 700;
 }
 .content {
-    
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    justify-content: space-around;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .third-title {
-    margin-bottom:120px;
+  margin-bottom: 120px;
 }
 .third-title h3 {
-    font-size:48px;
-    text-align:center;
-    font-weight: 100;
-
+  font-size: 48px;
+  text-align: center;
+  font-weight: 100;
 }
 .block {
-    width:100%;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction: column;
-    
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .div-button {
-    width:100%;
-    display:flex;
-    justify-content: center;  
-    
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .button {
-    height:102px;
-    width:501px;
-    border:none;
-    background-color: #32C140;
-    font-size:32px;
-    color:white;  
-    cursor:pointer; 
-    font-weight: 600; 
+  height: 102px;
+  width: 501px;
+  border: none;
+  background-color: #32c140;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
 }
 a {
-    text-decoration: none;
-    color:white;
+  text-decoration: none;
+  color: white;
 }
-@media screen and (min-width:320px) and (max-width:399px){
-    .third-title h3 {
-        font-size: 20px;
-    }
-    .button {
-        width:160px;
-        font-size:15px;
-        height:60px;
-    }
+@media screen and (min-width: 320px) and (max-width: 399px) {
+  .third-title h3 {
+    font-size: 20px;
+  }
+  .button {
+    width: 160px;
+    font-size: 15px;
+    height: 60px;
+  }
 }
 
-
-
-@media screen and (max-width:450px) and (min-width: 400px){
-    .third-title h3 {
-        font-size:25px;
-    }
-    .button {
-        width:160px;
-        height: 60px;
-        border-radius:5%;
-        font-size:15px;
-    }
+@media screen and (max-width: 450px) and (min-width: 400px) {
+  .third-title h3 {
+    font-size: 25px;
+  }
+  .button {
+    width: 160px;
+    height: 60px;
+    border-radius: 5%;
+    font-size: 15px;
+  }
 }

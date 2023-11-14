@@ -1,78 +1,77 @@
 body {
-    width:100%;
-    height:100%;
-    background-color: #E9E9E9;
+  width: 100%;
+  height: 100%;
+  background-color: #e9e9e9;
 }
 .title {
-    margin-bottom:25px;
-    font-size:25px;
+  margin-bottom: 25px;
+  font-size: 25px;
 }
+
 .title h1 {
-    font-size:32px;
-    margin-bottom:20px;
-    font-weight:700;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 .block {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    height:100vh;
-    width:100%;
-    padding-top:10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding-top: 10%;
 }
 .content {
-    width:50%;
+  width: 50%;
 }
 .form {
-    display:flex;
-    flex-direction: column;
-    width:100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
-.text, .text-title, .url, .name {
-    padding:10px;  
-    border-color: #E9E9E9;
-    border:1px solid #E9E9E9;
-    color:black;
-    margin-top:15px;
-    
+.text,
+.text-title,
+.url,
+.name {
+  padding: 10px;
+  border-color: #e9e9e9;
+  border: 1px solid #e9e9e9;
+  color: black;
+  margin-top: 15px;
 }
 .text {
-    padding-bottom:150px;
-    
+  padding-bottom: 150px;
 }
 
 .div-button {
-    width:100%;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .button {
-    width:279px;
-    background-color: #758FEB;
-    border:none;
-    height:45px;
-    color:white;
-    cursor:pointer;
-    margin-top:20px;
-
-
+  width: 279px;
+  background-color: #758feb;
+  border: none;
+  height: 45px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
 }
-textarea{
-    padding:10px;
-    resize:none;
-    border:1px solid #E9E9E9;
-    margin-top:15px;
+textarea {
+  padding: 10px;
+  resize: none;
+  border: 1px solid #e9e9e9;
+  margin-top: 15px;
 }
-@media screen and (min-width:320px) and (max-width:399px){
-    .title h1 {
-        font-size: 20px;
-    }
+@media screen and (min-width: 320px) and (max-width: 399px) {
+  .title h1 {
+    font-size: 20px;
+  }
 }
 
-@media screen and (max-width:450px) and (min-width: 400px){
-    .title h1 {
-        font-size: 25px;
-    }
+@media screen and (max-width: 450px) and (min-width: 400px) {
+  .title h1 {
+    font-size: 25px;
+  }
 }
