@@ -29,18 +29,18 @@ function printPost(object) {
 function openClickedPost(index) {
   const image = document.getElementById(`image-${index}`);
   image.addEventListener("click", () => {
-    const url = "../paginas/clickpost.html";
+    const url = "../paginas/ClickedPost.html";
     window.open(url, "_self");
     setLocalStorage("index", index);
   });
 }
 function openWindow() {
-  const url = "../paginas/addpost.html";
+  const url = "../paginas/AddPost.html";
   window.open(url, "_self");
 }
 function updateScreen(dataBase) {
   if (dataBase.length === 0) {
-    const url = "../index.html";
+    const url = "../Index.html";
     return window.open(url, "_self");
   }
   dataBase.forEach(printPost);

@@ -7,7 +7,7 @@ function prepareSend() {
   if (!checkFields()) {
     return null;
   }
-  const url = "../paginas/posts.html";
+  const url = "../paginas/Posts.html";
   openWindow(url);
 }
 
