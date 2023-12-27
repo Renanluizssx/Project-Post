@@ -6,6 +6,7 @@ body {
 }
 .title h1 {
   font-weight: 700;
+  margin-top: 10px;
 }
 .main {
   width: 100%;
@@ -34,7 +35,6 @@ p {
 h2 {
   font-size: 28px;
   color: #454040;
-  text-decoration: underline;
 }
 p {
   font-size: 20px;
@@ -53,6 +53,7 @@ p {
   width: 550px;
   height: 313px;
   cursor: pointer;
+  border-radius: 20px;
 }
 .title-post {
   display: flex;
