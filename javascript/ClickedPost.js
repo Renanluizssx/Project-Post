@@ -8,7 +8,7 @@ const newButton = document.getElementById("new-button");
 const editButton = document.getElementById("edit-button");
 const deleteButton = document.getElementById("delete-button");
 editButton.addEventListener("click", () => {
-  const url = "../paginas/edit.html";
+  const url = "../paginas/Edit.html";
   window.open(url, "_self");
 });
 
@@ -18,7 +18,7 @@ modalDelete.addEventListener("click", deletePost);
 const post = document.getElementById("content-post");
 
 newButton.addEventListener("click", () => {
-  const url = "../paginas/addpost.html";
+  const url = "../paginas/AddPost.html";
   window.open(url, "_self");
 });
 
@@ -62,6 +62,6 @@ function deletePost() {
   const index = getLocalStorage("index");
   dataBase.splice(index, 1);
   setLocalStorage("database", dataBase);
-  const url = "../paginas/posts.html";
+  const url = "../paginas/Posts.html";
   window.open(url, "_self");
 }
